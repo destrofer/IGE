@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{8BA8E690-0C74-4314-9A50-306CBEE2DC98}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>IGE</RootNamespace>
+    <AssemblyName>IGE</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <OutputPath>.\bin\$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>.\obj\$(Configuration)\</IntermediateOutputPath>
+    <BaseIntermediateOutputPath>.\obj\$(Configuration)\</BaseIntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\Viacheslav\AppData\Roaming\ICSharpCode/SharpDevelop4\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>x86</PlatformTarget>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <GenerateDocumentation>true</GenerateDocumentation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DefineConstants>TRACE;WIN</DefineConstants>
+    <GenerateDocumentation>true</GenerateDocumentation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>x86</PlatformTarget>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameEngine.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IGE.Audio\IGE.Audio.csproj">
+      <Project>{1E9F1A5B-9A56-42D8-90F2-6FDB588D4A9D}</Project>
+      <Name>IGE.Audio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IGE.Common\IGE.Common.csproj">
+      <Project>{9FF16105-BE2B-44A2-91C0-D79F38AD8BA6}</Project>
+      <Name>IGE.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IGE.Data\IGE.Data.csproj">
+      <Project>{FAF9071E-04E9-4E02-B8CF-DAA0CB54B590}</Project>
+      <Name>IGE.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IGE.Graphics\IGE.Graphics.csproj">
+      <Project>{398C59DB-AD8B-4176-B7B1-90745103723F}</Project>
+      <Name>IGE.Graphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IGE.Input\IGE.Input.csproj">
+      <Project>{AE427F75-5639-42CB-B614-6127370BD774}</Project>
+      <Name>IGE.Input</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IGE.Logistics\IGE.Logistics.csproj">
+      <Project>{E4A838E4-3046-4FCD-9D9E-1F5D9D716884}</Project>
+      <Name>IGE.Logistics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IGE.Net\IGE.Net.csproj">
+      <Project>{22B06B4F-939A-494C-A709-1155D3DBBFDF}</Project>
+      <Name>IGE.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IGE.Physics\IGE.Physics.csproj">
+      <Project>{B2774B95-7942-4ABC-A482-7F66FDBFC73E}</Project>
+      <Name>IGE.Physics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IGE.Platform.Unix.API\IGE.Platform.Unix.API.csproj">
+      <Project>{85207782-31C0-4CDC-BA05-4B96F1C7EEB9}</Project>
+      <Name>IGE.Platform.Unix.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IGE.Platform.Win32.API\IGE.Platform.Win32.API.csproj">
+      <Project>{919027BD-6666-471A-93F0-5FF0E5873020}</Project>
+      <Name>IGE.Platform.Win32.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IGE.Platform.Win32.NativeInput\IGE.Platform.Win32.NativeInput.csproj">
+      <Project>{D56C756B-2E23-47EE-93B4-395F2E068B46}</Project>
+      <Name>IGE.Platform.Win32.NativeInput</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IGE.Platform.Win32.NativeMultimedia\IGE.Platform.Win32.NativeMultimedia.csproj">
+      <Project>{A70365B6-5162-4CD4-9658-6F73A2BABF65}</Project>
+      <Name>IGE.Platform.Win32.NativeMultimedia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IGE.Platform.Win32.OpenAL\IGE.Platform.Win32.OpenAL.csproj">
+      <Project>{C25D87A2-5A89-437A-9B71-684ECB96AF9E}</Project>
+      <Name>IGE.Platform.Win32.OpenAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IGE.Platform.Win32.OpenGL\IGE.Platform.Win32.OpenGL.csproj">
+      <Project>{D9EEF6C2-D93C-41B7-BB57-A4BE46352E88}</Project>
+      <Name>IGE.Platform.Win32.OpenGL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IGE.Scripting\IGE.Scripting.csproj">
+      <Project>{AB0F002F-9185-4FE3-B7B0-8BF2E79FC9B3}</Project>
+      <Name>IGE.Scripting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IGE.Universe\IGE.Universe.csproj">
+      <Project>{DFAE4F47-EFCC-4E32-BDF3-3FE55F2B7F0F}</Project>
+      <Name>IGE.Universe</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IGE.Video\IGE.Video.csproj">
+      <Project>{7AD3FC03-0E22-41A6-98CC-874C36D33EA2}</Project>
+      <Name>IGE.Video</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <Policies>
+          <TextStylePolicy inheritsSet="null" scope="text/x-csharp" />
+          <CSharpFormattingPolicy IndentSwitchBody="True" AlignEmbeddedUsingStatements="False" AlignEmbeddedIfStatements="False" ElseIfNewLinePlacement="SameLine" AfterDelegateDeclarationParameterComma="True" inheritsSet="Mono" inheritsScope="text/x-csharp" scope="text/x-csharp" />
+          <TextStylePolicy FileWidth="120" TabsToSpaces="False" inheritsSet="VisualStudio" inheritsScope="text/plain" scope="text/plain" />
+          <StandardHeader Text="&#xA; ${FileName}&#xA; &#xA; Author:&#xA;      ${AuthorName} &lt;${AuthorEmail}&gt;&#xA; &#xA; Copyright (c) ${Year} ${CopyrightHolder}&#xA;&#xA; This program is free software: you can redistribute it and/or modify&#xA; it under the terms of the GNU Lesser General Public License as published by&#xA; the Free Software Foundation, either version 3 of the License, or&#xA; (at your option) any later version.&#xA;&#xA; This program is distributed in the hope that it will be useful,&#xA; but WITHOUT ANY WARRANTY; without even the implied warranty of&#xA; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the&#xA; GNU Lesser General Public License for more details.&#xA;&#xA; You should have received a copy of the GNU Lesser General Public License&#xA; along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;." IncludeInNewFiles="True" />
+          <VersionControlPolicy inheritsSet="Mono">
+            <CommitMessageStyle FirstFilePrefix="" FileSeparator=", " LastFilePostfix=":&#xA;" LineAlign="0" Wrap="False" />
+          </VersionControlPolicy>
+          <ChangeLogPolicy UpdateMode="ProjectRoot" VcsIntegration="RequireEntry" inheritsSet="Mono">
+            <MessageStyle LineAlign="0" />
+          </ChangeLogPolicy>
+        </Policies>
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>

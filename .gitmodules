@@ -1,0 +1,67 @@
+[submodule "engine/IGE.Audio"]
+path = engine/IGE.Audio
+url = https://github.com/destrofer/IGE.Audio.git
+
+[submodule "engine/IGE.Common"]
+path = engine/IGE.Common
+url = https://github.com/destrofer/IGE.Common.git
+
+[submodule "engine/IGE.Data"]
+path = engine/IGE.Data
+url = https://github.com/destrofer/IGE.Data.git
+
+[submodule "engine/IGE.Graphics"]
+path = engine/IGE.Graphics
+url = https://github.com/destrofer/IGE.Graphics.git
+
+[submodule "engine/IGE.Input"]
+path = engine/IGE.Input
+url = https://github.com/destrofer/IGE.Input.git
+
+[submodule "engine/IGE.Logistics"]
+path = engine/IGE.Logistics
+url = https://github.com/destrofer/IGE.Logistics.git
+
+[submodule "engine/IGE.Net"]
+path = engine/IGE.Net
+url = https://github.com/destrofer/IGE.Net.git
+
+[submodule "engine/IGE.Physics"]
+path = engine/IGE.Physics
+url = https://github.com/destrofer/IGE.Physics.git
+
+[submodule "engine/IGE.Platform.Unix.API"]
+path = engine/IGE.Platform.Unix.API
+url = https://github.com/destrofer/IGE.Platofrm.Unix.API.git
+
+[submodule "engine/IGE.Platform.Win32.API"]
+path = engine/IGE.Platform.Win32.API
+url = https://github.com/destrofer/IGE.Platofrm.Win32.API.git
+
+[submodule "engine/IGE.Platform.Win32.NativeInput"]
+path = engine/IGE.Platform.Win32.NativeInput
+url = https://github.com/destrofer/IGE.Platofrm.Win32.NativeInput.git
+
+[submodule "engine/IGE.Platform.Win32.NativeMultimedia"]
+path = engine/IGE.Platform.Win32.NativeMultimedia
+url = https://github.com/destrofer/IGE.Platofrm.Win32.NativeMultimedia.git
+
+[submodule "engine/IGE.Platform.Win32.OpenAL"]
+path = engine/IGE.Platform.Win32.OpenAL
+url = https://github.com/destrofer/IGE.Platofrm.Win32.OpenAL.git
+
+[submodule "engine/IGE.Platform.Win32.OpenGL"]
+path = engine/IGE.Platform.Win32.OpenGL
+url = https://github.com/destrofer/IGE.Platofrm.Win32.OpenGL.git
+
+[submodule "engine/IGE.Scripting"]
+path = engine/IGE.Scripting
+url = https://github.com/destrofer/IGE.Scripting.git
+
+[submodule "engine/IGE.Universe"]
+path = engine/IGE.Universe
+url = https://github.com/destrofer/IGE.Universe.git
+
+[submodule "engine/IGE.Video"]
+path = engine/IGE.Video
+url = https://github.com/destrofer/IGE.Video.git

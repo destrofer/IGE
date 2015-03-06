@@ -1,0 +1,8 @@
+/engine/*/bin/
+/tests/*/bin/
+/samples/*/bin/
+/tools/*/bin/
+/engine/*/obj/
+/tests/*/obj/
+/samples/*/obj/
+/tools/*/obj/
