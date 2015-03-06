@@ -32,27 +32,27 @@ url = https://github.com/destrofer/IGE.Physics.git
 
 [submodule "engine/IGE.Platform.Unix.API"]
 path = engine/IGE.Platform.Unix.API
-url = https://github.com/destrofer/IGE.Platofrm.Unix.API.git
+url = https://github.com/destrofer/IGE.Platform.Unix.API.git
 
 [submodule "engine/IGE.Platform.Win32.API"]
 path = engine/IGE.Platform.Win32.API
-url = https://github.com/destrofer/IGE.Platofrm.Win32.API.git
+url = https://github.com/destrofer/IGE.Platform.Win32.API.git
 
 [submodule "engine/IGE.Platform.Win32.NativeInput"]
 path = engine/IGE.Platform.Win32.NativeInput
-url = https://github.com/destrofer/IGE.Platofrm.Win32.NativeInput.git
+url = https://github.com/destrofer/IGE.Platform.Win32.NativeInput.git
 
 [submodule "engine/IGE.Platform.Win32.NativeMultimedia"]
 path = engine/IGE.Platform.Win32.NativeMultimedia
-url = https://github.com/destrofer/IGE.Platofrm.Win32.NativeMultimedia.git
+url = https://github.com/destrofer/IGE.Platform.Win32.NativeMultimedia.git
 
 [submodule "engine/IGE.Platform.Win32.OpenAL"]
 path = engine/IGE.Platform.Win32.OpenAL
-url = https://github.com/destrofer/IGE.Platofrm.Win32.OpenAL.git
+url = https://github.com/destrofer/IGE.Platform.Win32.OpenAL.git
 
 [submodule "engine/IGE.Platform.Win32.OpenGL"]
 path = engine/IGE.Platform.Win32.OpenGL
-url = https://github.com/destrofer/IGE.Platofrm.Win32.OpenGL.git
+url = https://github.com/destrofer/IGE.Platform.Win32.OpenGL.git
 
 [submodule "engine/IGE.Scripting"]
 path = engine/IGE.Scripting
