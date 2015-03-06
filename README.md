@@ -11,7 +11,7 @@ IGE consists of multiple modules where each module is a separate project added
 to this repository as a submodule. You can clone the IGE repository along with
 all submodules by using following command:
 
-	git clone --recursive https://github.com/destrofer/IGE
+	git clone --recursive https://github.com/destrofer/IGE.git
 
 In case you already cloned this repository and module projects don't contain
 any sources you may use following commands to get all the sources:
