@@ -33,7 +33,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Intellectual Game Engine")]
-[assembly: AssemblyCopyright("Copyright 2004-2015 Viacheslav Soroka")]
+[assembly: AssemblyCopyright("Copyright 2004-2016 Viacheslav Soroka")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -47,4 +47,4 @@ using System.Runtime.InteropServices;
 //
 // You can specify all the values or you can use the default the Revision and 
 // Build Numbers by using the '*' as shown below:
-[assembly: AssemblyVersion("9.0.0.*")]
+[assembly: AssemblyVersion("9.0.1.*")]

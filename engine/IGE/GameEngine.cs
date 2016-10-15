@@ -76,7 +76,9 @@ namespace IGE {
 		}
 		
 		public static void Run() {
+			int initialVSyncSetting = 0;
 			try {
+				initialVSyncSetting = GL.GetBufferSwapInterval();
 				GameConfig.Load();
 
 				GameDebugger.EngineLog(LogLevel.Debug, "Running application specific configuration event handlers");
@@ -207,6 +209,9 @@ namespace IGE {
 
 					window.Show();
 					
+					GL.SetBufferSwapInterval(GameConfig.VSync ? 1 : 0);
+					GameConfig.VSyncChangedEvent += OnVSyncSettingChanged;
+					
 					OnLoad();
 					if( LoadEvent != null )
 						LoadEvent();
@@ -254,14 +259,23 @@ namespace IGE {
 					GameDebugger.EngineLog(LogLevel.Error, "IGE could not automatically save the configuration!");
 					GameDebugger.EngineLog(LogLevel.Error, ex);
 				}
+				
+				try { GameConfig.VSyncChangedEvent -= OnVSyncSettingChanged; } catch {}
+				
+				GL.SetBufferSwapInterval(initialVSyncSetting);
 				m_Window = null;
 			}
 		}
 		
+		private static void OnVSyncSettingChanged(bool vsync) {
+			GL.SetBufferSwapInterval(vsync ? 1 : 0);
+		}
+		
 		// initialization related
 		public static Color4 BackgroundColor = new Color4(0.05f, 0.20f, 0.25f, 1.0f);
-
+		
 		public static void ApplyDefaultGraphicsSettings() {
+			
 			View.ResetView();
 			
 			GL.ClearColor(ref BackgroundColor);

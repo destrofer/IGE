@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-# SharpDevelop 5.0
+# SharpDevelop 5.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IGE", "engine\IGE\IGE.csproj", "{8BA8E690-0C74-4314-9A50-306CBEE2DC98}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IGE.Common", "engine\IGE.Common\IGE.Common.csproj", "{9FF16105-BE2B-44A2-91C0-D79F38AD8BA6}"
